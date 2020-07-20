@@ -3,14 +3,14 @@ def finding_gcd(a, b):
 
     while(b != 0):
         result = b
-
-        # a, b = b, a % b
-        old_b = b
-        b = a % b
-        a = old_b
-
+        a, b = b, a % b
+        # old_b = b
+        # b = a % b
+        # a = old_b
         print("result:", result, "/ a:", a, "/ b:", b)
-    return result
+    
+    # return result
+    return a
 
 def test_finding_gcd():
     number1 = 21
